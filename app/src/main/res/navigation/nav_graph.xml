@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/planetsListFragment">
+
+    <fragment
+        android:id="@+id/addPlanetFragment"
+        android:name="com.swhite.planetskt.AddPlanetFragment"
+        android:label="fragment_add_planet"
+        tools:layout="@layout/fragment_add_planet" >
+        <action
+            android:id="@+id/action_addPlanetFragment_to_planetsListFragment"
+            app:destination="@id/planetsListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/planetsListFragment"
+        android:name="com.swhite.planetskt.PlanetsListFragment"
+        android:label="fragment_planets_list_fragement"
+        tools:layout="@layout/fragment_planets_list_fragement" >
+        <action
+            android:id="@+id/action_planetsListFragment_to_addPlanetFragment"
+            app:destination="@id/addPlanetFragment" />
+        <action
+            android:id="@+id/action_planetsListFragment_to_planetDetailsFragment"
+            app:destination="@id/planetDetailsFragment" />
+        <argument
+            android:name="planetName"
+            app:argType="string"
+            android:defaultValue="Planet Name" />
+    </fragment>
+    <fragment
+        android:id="@+id/planetDetailsFragment"
+        android:name="com.swhite.planetskt.PlanetDetailsFragment"
+        android:label="fragment_planet_details"
+        tools:layout="@layout/fragment_planet_details" />
+</navigation>

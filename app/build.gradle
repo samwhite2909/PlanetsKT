@@ -44,4 +44,8 @@ dependencies {
 
     //Makes tests more readable.
     testImplementation "com.google.truth:truth:1.0.1"
+
+    //Nav
+    implementation("androidx.navigation:navigation-fragment-ktx:2.6.0")
+    implementation("androidx.navigation:navigation-ui-ktx:2.6.0")
 }
