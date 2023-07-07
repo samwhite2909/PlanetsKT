@@ -12,4 +12,19 @@ object ValidPlanetUtil {
         return !(planetName.isBlank() || planetName.length >= 25)
     }
 
+    //Checks if the planet has a radius entered and is acceptable.
+    fun checkValidPlanetRadius(planetRadius: Int):Boolean {
+        return !(planetRadius == 0 || planetRadius >= 100000)
+    }
+
+    //Checks if the planet has a number of moons entered and is acceptable.
+    fun checkValidPlanetMoons(planetMoons: Int):Boolean {
+        return !(planetMoons == 0 || planetMoons >= 200)
+    }
+
+    //Checks if the planet has a year in days entered and is acceptable.
+    fun checkValidPlanetYear(planetYearInDays: Int):Boolean {
+        return !(planetYearInDays == 0 || planetYearInDays >= 100000)
+    }
+
 }

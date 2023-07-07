@@ -9,4 +9,14 @@
     <string name="planet_year">Year</string>
     <string name="planet_type">Type</string>
     <string name="planet_dwarf">Dwarf</string>
+    <string name="name">Planet name:</string>
+    <string name="radius_in_miles">Radius in miles:</string>
+    <string name="number_of_moons">Number of moons:</string>
+    <string name="length_of_a_year_in_days">Length of a year in days:</string>
+    <string name="planet_type_hint">"Planet type: "</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="dwarf_planet">Dwarf planet?</string>
+    <string name="create_planet">Create planet</string>
+    <string name="create_a_new_planet">Create a new planet:</string>
 </resources>
